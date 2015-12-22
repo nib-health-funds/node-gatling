@@ -8,13 +8,19 @@ Sets the correct working directory for gatling to run and invokes the ```gatling
 
 Simply install ```npm-gatling``` and call ```gatling``` as you would when using the original gatling binaries.
 
-@root is replaced with the current working directory.
-This helps us achieve relative file paths when running gatling from project directories.
-
+### Install
 ```
   npm i npm-gatling --save
-  gatling -s SimulationName -rf @root/results/ 
 ```
+
+### Run
+```
+  gatling -s SimulationName -rf ~/results/ 
+```
+
+> Note: '~' is replaced with the current working directory.
+
+> This helps us achieve relative file paths when running gatling from project directories.
 
 ----------
 

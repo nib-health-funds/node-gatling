@@ -4,7 +4,7 @@
 var spawn = require('child_process').spawn;
 
 module.exports = function(rootPath){
-  
+
   var dirToChangeTo = __dirname + '\\lib\\bin';
 	process.chdir(dirToChangeTo);
 
@@ -13,7 +13,7 @@ module.exports = function(rootPath){
   var args = process.argv.slice(2);
 
   for(var i = 0; i < args.length; i++) {
-    args[i] = args[i].replace('@root', rootPath);
+    args[i] = args[i].replace('~', rootPath);
   }
 
   var child = spawn('gatling.bat', args);
