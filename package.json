@@ -1,6 +1,6 @@
 {
   "name": "@nib/npm-gatling",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "npm wrapper around the gatling binaries.",
   "bin": {
     "gatling": "./index.js"
