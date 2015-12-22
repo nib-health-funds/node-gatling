@@ -11,5 +11,8 @@
     "gatling": "./index.js"
   },
   "author": "Matthew Turner",
-  "homepage": "https://github.com/nib-health-funds/npm-gatling"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nib-health-funds/npm-gatling.git"
+  }
 }
