@@ -1,9 +1,11 @@
 #npm-gatling
-NPM wrapper around the gatling binaries. 
+
+npm wrapper around the gatling binaries. 
 
 Sets the correct working directory for gatling to run and invokes the ```gatling.bat``` file with all of the passed parameters.
 
 ##Usage
+
 Simply install ```npm-gatling``` and call ```gatling``` as you would when using the original gatling binaries.
 
 @root is replaced with the current working directory.
