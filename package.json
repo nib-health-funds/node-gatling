@@ -10,5 +10,6 @@
   "bin": {
     "gatling": "./index.js"
   },
-  "author": "Matthew Turner"
+  "author": "Matthew Turner",
+  "homepage": "https://github.com/nib-health-funds/npm-gatling"
 }
