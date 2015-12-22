@@ -1,0 +1,14 @@
+{
+  "name": "npm-gatling",
+  "version": "1.0.0",
+  "description": "npm wrapper around the gatling binaries. Sets the correct working directory for gatling to run and invokes the gatling.bat file with all of the passed arguments.",
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gatling": "./index.js"
+  },
+  "author": "Matthew Turner"
+}
