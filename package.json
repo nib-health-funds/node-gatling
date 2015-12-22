@@ -1,6 +1,6 @@
 {
-  "name": "npm-gatling",
-  "version": "1.0.0",
+  "name": "@nib/npm-gatling",
+  "version": "0.1.0",
   "description": "npm wrapper around the gatling binaries. Sets the correct working directory for gatling to run and invokes the gatling.bat file with all of the passed arguments.",
   "devDependencies": {
   },
