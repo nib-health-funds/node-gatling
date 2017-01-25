@@ -1,8 +1,10 @@
 # npm-gatling
 
-npm wrapper around the gatling binaries. 
+npm wrapper around the gatling binaries.
 
 Sets the correct working directory for gatling to run and invokes the ```gatling.bat``` file with all of the passed parameters.
+
+The included gatling version is 2.2.3.
 
 ## Usage
 
@@ -15,7 +17,7 @@ Simply install ```npm-gatling``` and call ```gatling``` as you would when using 
 
 ### Run
 ```
-  gatling -s SimulationName -rf ~/results/ 
+  gatling -s SimulationName -rf ~/results/
 ```
 
 > Note: '~' is replaced with the current working directory.
@@ -24,4 +26,4 @@ Simply install ```npm-gatling``` and call ```gatling``` as you would when using 
 
 ----------
 
-See [the gatling docs](http://gatling.io/docs/2.0.0-RC2/general/configuration.html#command-line-options "http://gatling.io/docs/2.0.0-RC2/general/configuration.html#command-line-options") for a list of all the command line arguments.
+See [the gatling docs](http://gatling.io/docs/2.2.3/general/configuration.html#command-line-options "http://gatling.io/docs/2.2.3/general/configuration.html#command-line-options") for a list of all the command line arguments.
