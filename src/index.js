@@ -2,10 +2,11 @@
 'use strict';
 
 var spawn = require('child_process').spawn;
+var path = require('path');
 
 module.exports = function(rootPath){
 
-  var dirToChangeTo = __dirname + '\\lib\\bin';
+  var dirToChangeTo = path.join(__dirname, 'lib', 'bin');
   process.chdir(dirToChangeTo);
 
   process.env['NO_PAUSE'] = true;
@@ -16,7 +17,10 @@ module.exports = function(rootPath){
     args[i] = args[i].replace('~', rootPath);
   }
 
-  var child = spawn('gatling.bat', args);
+  var executable = process.platform === 'win32'
+      ? 'gatling.bat'
+      : path.join(dirToChangeTo, 'gatling.sh');
+  var child = spawn(executable, args);
 
   process.on('exit', function() {
     child.kill();
