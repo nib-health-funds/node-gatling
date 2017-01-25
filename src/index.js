@@ -6,9 +6,9 @@ var spawn = require('child_process').spawn;
 module.exports = function(rootPath){
 
   var dirToChangeTo = __dirname + '\\lib\\bin';
-	process.chdir(dirToChangeTo);
+  process.chdir(dirToChangeTo);
 
-	process.env['NO_PAUSE'] = true;
+  process.env['NO_PAUSE'] = true;
 
   var args = process.argv.slice(2);
 
@@ -23,10 +23,10 @@ module.exports = function(rootPath){
   });
 
   child.stdout.on('data', function(chunk){
-    console.log(chunk.toString()); 
+    console.log(chunk.toString());
   });
 
-	child.stderr.on('data', function(chunk){
-		console.log(chunk.toString()); 
-	});
-}
+  child.stderr.on('data', function(chunk){
+    console.log(chunk.toString());
+  });
+};
