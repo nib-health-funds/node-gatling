@@ -4,7 +4,7 @@ npm wrapper around the gatling binaries.
 
 Sets the correct working directory for gatling to run and invokes the ```gatling.bat``` file with all of the passed parameters.
 
-The included gatling version is 2.2.3.
+In npm package version 1.0.0, the included gatling version is 2.1.5. In npm package version 2.0.0, the included gatling version is 2.2.3. There are [breaking changes](http://gatling.io/docs/2.2.3/migration_guides/2.1-to-2.2.html#to-2-2 "http://gatling.io/docs/2.2.3/migration_guides/2.1-to-2.2.html#to-2-2") between gatling's 2.1 and 2.2 versions, which you may want to review before updating.
 
 ## Usage
 
